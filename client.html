@@ -1,0 +1,183 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <title>Client | Royal Interiors</title>
+  </head>
+  <body class="scrollSpy client-background">
+    <header class="main-header container" id="header">
+      <div class="primary-overlay">
+        <div class="navbar-fixed">
+          <nav class="transparent">
+            <div class="nav-wrapper">
+              <a
+                href="index.html"
+                class="brand-logo blue-text text-lighten-1 left-align nav-color"
+                ><img
+                  src="../img/royal_interiors_logo.png"
+                  class="brand-image"
+                />
+                Royal Interiors
+              </a>
+              <a href="#" data-activates="mobile-nav" class="button-collapse">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li>
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="client.html">Clients</a>
+                </li>
+                <li>
+                  <a href="solution.html">Gallery</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- Side nav -->
+        <ul class="side-nav" id="mobile-nav">
+          <li>
+            <a href="index.html" class="blue-grey lighten-1 center first-para">
+              Royal Interiors
+            </a>
+          </li>
+          <div class="divider"></div>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="client.html">Clients</a>
+          </li>
+          <li>
+            <a href="solution.html">Solutions</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- main-content -->
+    <div class="main-content center nav-color">
+      <h2 class="white-text">
+        Our Clients
+      </h2>
+      <div class="row client-logo">
+        <div class="col padding s6 m3">
+          <img
+            src="../img/1200px-GAIL_Logo.svg.png"
+            alt=""
+            class="image-logo"
+          />
+        </div>
+        <div class="col padding s6 m3">
+          <img
+            src="../img/Bharti_Airtel_Limited.svg"
+            alt=""
+            class="image-logo"
+          />
+        </div>
+        <div class="col padding s6 m3">
+          <img src="../img/li-fung.jpg" alt="" class="image-logo" />
+        </div>
+        <div class="col padding s6 m3">
+          <img
+            src="../img/Toyo_Engineering_company_logo.svg.png"
+            alt=""
+            class="image-logo"
+          />
+        </div>
+      </div>
+      <div class="row client-logo">
+        <div class="col padding s6 m3">
+          <img
+            src="../img/Rockwell_Automation_logo.svg.png"
+            alt=""
+            class="image-logo"
+          />
+        </div>
+        <div class="col padding s6 m3">
+          <img
+            src="../img/honeywell-logo-approved.png"
+            alt=""
+            class="image-logo"
+          />
+        </div>
+        <div class="col padding s6 m3">
+          <img src="../img/download.png" alt="" class="image-logo circle" />
+        </div>
+        <div class="col s6 m3">
+          <img src="../img/ING-Bank-1200x1200.png" alt="" class="image-logo" />
+        </div>
+      </div>
+      <div class="row client-logo">
+        <div class="col padding s6 m3">
+          <img src="../img/guideline_based1.png" alt="" class="image-logo" />
+        </div>
+        <div class="col padding s6 m3">
+          <img src="../img/ericsson_logo.png" alt="" class="image-logo" />
+        </div>
+        <div class="col padding s6 m3">
+          <img src="../img/siemens-logo.jpg" alt="" class="image-logo circle" />
+        </div>
+        <div class="col padding s6 m3">
+          <img src="../img/boss.png" alt="" class="image-logo circle" />
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer"></div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+      $(document).ready(function () {
+        // Init Sidenav
+        $(".button-collapse").sideNav();
+        // Init Scrollspy
+        $(".scrollspy").scrollSpy();
+        $(window).on("beforeunload", function () {
+          $(window).scrollTop(0);
+        });
+
+        // ScrollFire
+        const options = [
+          {
+            selector: ".navbar-fixed",
+            offset: 100,
+            callback: function () {
+              $("nav").removeClass("transparent");
+              $("nav").addClass("grey darken-4");
+            },
+          },
+        ];
+
+        Materialize.scrollFire(options);
+      });
+    </script>
+  </body>
+</html>

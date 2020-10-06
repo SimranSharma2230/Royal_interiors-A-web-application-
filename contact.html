@@ -1,0 +1,147 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <title>Contact Us | Royal Interiors</title>
+  </head>
+  <body class="scrollSpy contact-background">
+    <!-- header -->
+    <header class="main-header container" id="header">
+      <div class="primary-overlay">
+        <div class="navbar-fixed">
+          <nav class="transparent">
+            <div class="nav-wrapper">
+              <a
+                href="index.html"
+                class="brand-logo blue-text text-lighten-1 left-align nav-color"
+                ><img
+                  src="../img/royal_interiors_logo.png"
+                  class="brand-image"
+                />
+                Royal Interiors
+              </a>
+              <a href="#" data-activates="mobile-nav" class="button-collapse">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li>
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="client.html">Clients</a>
+                </li>
+                <li>
+                  <a href="solution.html">Gallery</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- Side nav -->
+        <ul class="side-nav" id="mobile-nav">
+          <li>
+            <a href="index.html" class="blue-grey lighten-1 center first-para">
+              Royal Interiors
+            </a>
+          </li>
+          <div class="divider"></div>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="client.html">Clients</a>
+          </li>
+          <li>
+            <a href="solution.html">Solutions</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- main-content -->
+    <div
+      class="main-content con scrollSpy"
+    >
+      <div class="row">
+        <div class="col s11 m4">
+          <div class="card-panel  left-align white-text blue darken-4">
+            <h3>
+             Contact Us
+            </h3>
+            <div class="divider">
+            </div>
+            <h5 class="top">Address:</h5>
+              <h6>C-19/2,1st  Floor, Acharya Niketan,</h6>
+                Mayur Vihar Phase-1, Delhi-110091
+              <h5 class="top">Phone No.  :</h5> <h6>91-11-65154599, 8130091396, 9810903044 </h6>
+              <h5 class="top">Email ID:</h5>
+              <h6>
+                <a href="mailto:lekhrajgoswami@yahoo.com" class="white-text"
+                >lekhrajgoswami@yahoo.com</a
+              >
+              <a href="mailto:lekhrajgoswami@yahoo.com" class="white-text"
+              >, sparamvir388@gmail.com</a
+            >
+
+              </h6>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div id="footer"></div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+      $(document).ready(function () {
+        // Init Sidenav
+        $(".button-collapse").sideNav();
+        // Init Scrollspy
+        $(".scrollSpy").scrollSpy();
+        $(window).on("beforeunload", function () {
+          $(window).scrollTop(0);
+        });
+
+        // ScrollFire
+        const options = [
+          {
+            selector: ".navbar-fixed",
+            offset: 100,
+            callback: function () {
+              $("nav").removeClass("transparent");
+              $("nav").addClass("grey darken-4");
+            },
+          },
+        ];
+        $(".materialboxed").materialbox();
+        Materialize.scrollFire(options);
+      });
+    </script>
+  </body>
+</html>

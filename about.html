@@ -1,0 +1,139 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <title>About | Royal Interiors</title>
+  </head>
+  <body class="scrollSpy about-background">
+    <header class="main-header container" id="header">
+      <div class="primary-overlay">
+        <div class="navbar-fixed">
+          <nav class="transparent">
+            <div class="nav-wrapper">
+              <a
+                href="index.html"
+                class="brand-logo blue-text text-lighten-1 left-align nav-color"
+                ><img
+                  src="../img/royal_interiors_logo.png"
+                  class="brand-image"
+                />
+                Royal Interiors
+              </a>
+              <a href="#" data-activates="mobile-nav" class="button-collapse">
+                <i class="material-icons">menu</i>
+              </a>
+              <ul class="right hide-on-med-and-down">
+                <li>
+                  <a href="about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="client.html">Clients</a>
+                </li>
+                <li>
+                  <a href="solution.html">Gallery</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- Side nav -->
+        <ul class="side-nav" id="mobile-nav">
+          <li>
+            <a href="index.html" class="blue-grey lighten-1 center first-para">
+              Royal Interiors
+            </a>
+          </li>
+          <div class="divider"></div>
+          <li>
+            <a href="about.html">About Us</a>
+          </li>
+          <li>
+            <a href="client.html">Clients</a>
+          </li>
+          <li>
+            <a href="solution.html">Solutions</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- main-content -->
+    <div class="main-content center">
+      <h3 class="padding center">About Us</h3>
+      <p class="first_para flow-text">
+        Royal Interiors is a true Interiors Infrastructure Company with base
+        office in New Delhi, which provides a full spectrum of related services
+        for clients starting from basic design, provision of technical manpower
+        and equipment to complete project execution. The company's founders are
+        in the industry for over a decade with experience in the domestic and
+        middle-east markets. They have founded Royal Interiors to formalize the
+        optimum interiors solution in the offering.
+      </p>
+      <p class="first_para flow-text">
+        We have lived and worked throughout India and have a versatile team, one
+        of who will speak local Indian languages and understand the law, culture
+        and challenges of living and working throughout the region. Royal
+        Interiors offers a durable, high-quality interior solution for business
+        houses. Our valued clients must know that working with Royal Interiors
+        is a more professional, less risky way to execute their projects than
+        working completely in-house with their own people. Royal Interiors must
+        also be able to maintain financial balance, charging a reasonable value
+        for its services, and delivering a higher value to its clients.
+      </p>
+    </div>
+    <!-- footer -->
+    <div id="footer"></div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+      $(document).ready(function () {
+        // Init Sidenav
+        $(".button-collapse").sideNav();
+        // Init Scrollspy
+        $(".scrollSpy").scrollSpy();
+        $(window).on("beforeunload", function () {
+          $(window).scrollTop(0);
+        });
+
+        // ScrollFire
+        const options = [
+          {
+            selector: ".navbar-fixed",
+            offset: 100,
+            callback: function () {
+              $("nav").removeClass("transparent");
+              $("nav").addClass("grey darken-4");
+            },
+          },
+        ];
+        $(".materialboxed").materialbox();
+        Materialize.scrollFire(options);
+      });
+    </script>
+  </body>
+</html>

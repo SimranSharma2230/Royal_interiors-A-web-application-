@@ -1,0 +1,129 @@
+#home {
+  background-color: black;
+  font-family: "lemonada";
+}
+.nav-color {
+  font-weight: 550;
+  font-family: "lemonada";
+}
+.caption {
+  /* -webkit-text-stroke: 0.7px rgb(255, 0, 0); */
+}
+.text-boundary {
+  -webkit-text-stroke: 0.5px #42a5f5;
+}
+.side-color {
+  font-size: 8rem;
+}
+.brand-logo {
+  margin-left: 2%;
+}
+.brand-image {
+  height: 1.4rem;
+  width: 2.3rem;
+}
+.primary-overlay {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.right {
+  margin-right: 2%;
+}
+.nav-color center {
+  font-weight: bold;
+}
+
+.con {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.para-con {
+  margin-top: 1%;
+}
+.page-footer {
+  margin-top: 1%;
+}
+.first_para {
+  font-family: "lemonada";
+}
+
+.main-content {
+  margin-left: 8%;
+  margin-right: 7%;
+}
+.client_logo {
+  height: 20%;
+}
+.image-logo {
+  height: 6rem;
+  width: 6rem;
+  margin-bottom: 2.5%;
+}
+.client-logo {
+  margin-top: 3.5%;
+  margin-bottom: 7%;
+}
+.contact-background {
+  background-image: url(../img/location.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.about-background {
+  background-image: url(../img/pencil_bak.jpg);
+  background-size: cover;
+}
+.client-background {
+  background-color: black;
+}
+.image-site-view {
+  margin-top: 2.5%;
+}
+.materialboxed {
+  height: 5rem;
+}
+.col .s12 .m3 {
+  margin-top: 2.5%;
+  padding-left: 1rem;
+}
+
+.main-header {
+  padding-top: 6%;
+}
+.res-site {
+  background-image: url(../img/texture_gallery.jpg);
+  height: max-content;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  [class*="main-header"] {
+    padding-top: 12%;
+  }
+  [class*="padding"] {
+    margin-bottom: 4%;
+  }
+}
+.card-panel {
+  border-radius: 30px;
+  opacity: 90%;
+  margin-left: 2.5%;
+}
+.top {
+  margin-top: 10%;
+}
+.parallax1 {
+  margin-top: 17%;
+  margin-bottom: 25%;
+}
+.parallax2 {
+  margin-top: 9%;
+  margin-bottom: 22%;
+  background-size: cover;
+}
+.material-tooltip {
+  width: 250px;
+}
